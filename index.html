@@ -1,24 +1,258 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/customer.css">
     <title>SuporteTecWeb</title>
 </head>
 <body>
-    <header>
-        <h1> <a href="index.html">STW</a></h1>
-        <nav>
+<!--Header-->
+<header id="header">
+    <a href="index.html" class="logo">STW</a>
+    <ul>
+        <li><a href="#home" onclick=" toggle();">Home</a></li>
+        <li><a href="#sobre" onclick=" toggle();">Sobre</a></li>
+        <li><a href="#services" onclick=" toggle();">Serviços</a></li>
+        <li><a href="#portfalio" onclick=" toggle();">Portfolio</a></li>
+        <li><a href="#equipe" onclick=" toggle();">Equipe</a></li>
+        <li><a href="#contato" onclick=" toggle();">Contato</a></li>
+   </ul>
+   <div class="toggle" onclick=" toggle();"></div><!--Menu Responsivo-->
+</header>
+
+<!--Banner-->
+<section class="banner" id="home">
+    <h2>Nós Fazemos<br><span>sua marca</span> importa!</h2>
+</section><!--finalinzando o banner -->
+
+<!--Sobre-->
+<section class="sec" id="sobre">
+    <div class="content">
+        <div class="mxw800p">
+            <h3>Quem Somos Nós</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat saepe aliquid labore, ipsam iure, voluptatem delectus quidem hic iste eaque, nisi ipsum magni modi! Ullam cupiditate esse fuga ad beatae!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat saepe aliquid labore, ipsam iure, voluptatem delectus quidem hic iste eaque, nisi ipsum magni modi! Ullam cupiditate esse fuga ad beatae.</p>
+            <a href="#" class="btn">Veja nossa História</a>
+        </div>
+    </div>
+</section><!--Finalinzaod seção-->
+
+<!--Serviços-->
+<section class="sec" id="services">
+    <div class="content">
+        <div class="mxw800p">
+            <h3>O que Fazemos</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat saepe aliquid labore, ipsam iure, voluptatem delectus quidem hic iste eaque, nisi ipsum magni modi! Ullam cupiditate esse fuga ad beatae!</p>
+        </div>
+        <div class="services">
+
+            <!--Box um-->
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/icon1.png" alt="SErviço um">
+                </div>
+                <div class="content">
+                    <h2>Desingn</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, magni expedita? Ullam ab voluptatum.</p>
+                </div>
+            </div>
+
+             <!--Box dois-->
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/icon2.png" alt="SErviço dois">
+                </div>
+                <div class="content">
+                    <h2>Desenvolvimento</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, magni expedita? Ullam ab voluptatum.</p>
+                </div>
+            </div>
+
+             <!--Box tres-->
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/icon3.png" alt="SErviço tres">
+                </div>
+                <div class="content">
+                    <h2>SEO</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, magni expedita? Ullam ab voluptatum.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!--finalinzando Seção-->
+
+<!--Estatisticas-->
+<section class="sec stats">
+    <div class="content">
+        <div class="mxw800p">
+            <h3>Nossas Conquistas</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat saepe aliquid labore, ipsam iure, voluptatem delectus quidem hic iste eaque, nisi ipsum magni modi.</p>
+        </div>
+        <div class="statsBx">
+            <!--Primeira caixa-->
+            <div class="box">
+                <h2>1200+</h2>
+                <h4>Projetos</h4>
+            </div>
+            <!--Segunda caixa-->
+            <div class="box">
+                <h2>800+</h2>
+                <h4>Clintes Felizes</h4>
+            </div>
+            <!--Terceira caixa-->
+            <div class="box">
+                <h2>150+</h2>
+                <h4>Países</h4>
+            </div>
+            <!--Quarta caixa-->
+            <div class="box">
+                <h2>50+</h2>
+                <h4>Prêmios</h4>
+            </div>
+        </div>
+    </div>
+</section><!--finalinzando Seção-->
+
+<!--Portfolio-->
+<section class="sec work" id="portfalio">
+    <div class="content">
+        <div class="mxw800p">
+            <h3>Tralhos Recetes</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat saepe aliquid labore, ipsam iure, voluptatem delectus quidem hic iste eaque, nisi ipsum magni modi.</p>
+        </div>
+    <div class="wrokBx">
+        <!--Trabalho-um-->
+        <div class="brank">
+            <a href="#"><h2>Primeiro</h2></a>
+        </div>
+        <!--Trabalho-dois-->
+        <div class="brank">
+            <a href="#"><h2>Segundo</h2></a>
+        </div>
+        <!--Trabalho-três-->
+        <div class="brank">
+            <a href="#"><h2>Terceito</h2></a>
+        </div>
+        <!--Trabalho-quatro-->
+        <div class="brank">
+            <a href="#"><h2>Quarto</h2></a>
+        </div>
+        <!--Trabalho-quinto-->
+        <div class="brank">
+            <a href="#"><h2>Quinto</h2></a>
+        </div>
+        <!--Trabalho-Sexto-->
+        <div class="brank">
+            <a href="#"><h2>Sexto</h2></a>
+        </div>
+        <!--Trabalho-sétimo-->
+        <div class="brank">
+            <a href="#"><h2>Sétimo</h2></a>
+        </div>
+        <!--Trabalho-oitavo-->
+        <div class="brank">
+            <a href="#"><h2>Oitavo</h2></a>
+        </div>
+    </div>
+</section><!--finalinzando Seção-->
+
+<!--Equipe-->
+<section class="sec" id="equipe">
+    <div class="content">
+        <div class="mxw800p">
+            <h3>Conheça nosso especialista</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat saepe aliquid labore, ipsam iure, voluptatem delectus quidem hic iste eaque, nisi ipsum magni modi.</p>
+        </div>
+        <div class="teanBx">
+            <!--Primeiro membro-->
+            <div class="member">
+                <div class="imgBx">
+                    <img src="img/1.jpg" alt="especialista01">
+                </div>
+                <div class="detaltes">
+                    <div>
+                        <h2>Bambina Goes <br><span>Criadora Presidenta</span></h2>
+                    </div>
+                </div>
+            </div>
+            <!--Segindo membro-->
+            <div class="member">
+                <div class="imgBx">
+                    <img src="img/2.jpg" alt="especialista01">
+                </div>
+                <div class="detaltes">
+                    <div>
+                        <h2>Bambina Goes <br><span>Criadora Presidenta</span></h2>
+                    </div>
+                </div>
+            </div>
+            <!--Terceiro membro-->
+            <div class="member">
+                <div class="imgBx">
+                    <img src="img/3.jpg" alt="especialista01">
+                </div>
+                <div class="detaltes">
+                    <div>
+                        <h2>Bambina Goes <br><span>Criadora Presidenta</span></h2>
+                    </div>
+                </div>
+            </div>
+            <!--Quarto membro-->
+            <div class="member">
+                <div class="imgBx">
+                    <img src="img/4.jpg" alt="especialista01">
+                </div>
+                <div class="detaltes">
+                    <div>
+                        <h2>Bambina Goes <br><span>Criadora Presidenta</span></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!--finalinzando seção-->
+
+<!--Contato-->
+<section class="sec contato" id="contato">
+    <div class="content">
+        <div class="mxw800p">
+            <h3>Fale Conosco</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="contatoForms">
+            <form>
+                <div class="row100">
+                    <div class="inputBx50">
+                        <input type="text" name="" placeholder="Nome Completo">
+                    </div>
+                    <div class="inputBx50">
+                        <input type="text" name="" placeholder="E-mail">
+                    </div>
+                </div>
+                <div class="row100">
+                    <div class="inputBx100">
+                        <textarea placeholder="Mensagem"></textarea>
+                    </div>
+                </div>
+                <div class="row100">
+                    <div class="inputBx100">
+                        <input type="submit" name="" value="Enviar">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="sci">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contato"></a></li>
+                <li><a href="#"><img src="img/facebook.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="img/twitter.png" alt="Twitter"></a></li>
+                <li><a href="#"><img src="img/linkedin.png" alt="Linkedin"></a></li>
             </ul>
-        </nav>
-    </header>
-   
+        </div>
+        <p class="copyright">Desingn & Desenvolvido By <a href="#" target="blank">SuporteTecWeb</a></p>
+    </div>
+</section><!--finalinzando Contato-->
+<script src="js/customer.js"></script>
 </body>
 </html>
